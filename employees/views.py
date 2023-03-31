@@ -11,3 +11,12 @@ class EmployeeViewSet(viewsets.ModelViewSet):
     serializer_class = EmployeeSerializer
 
     department = DepartmentSerializer(read_only=True)
+
+
+def list_employees(request):
+    employees = Employee.objects.all()
+    return render(
+        request=request,
+        template_name="pages/home.html",
+        context={"employees": employees},
+    )

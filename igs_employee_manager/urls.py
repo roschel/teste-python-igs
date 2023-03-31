@@ -18,8 +18,10 @@ from django.urls import path, include
 
 from departments.urls import departments_router
 from employees.urls import employees_router
+from employees.views import list_employees
 
 urlpatterns = [
+    path("", list_employees, name="home"),
     path('admin/', admin.site.urls),
     path('api/v1/', include(employees_router.urls)),
     path('api/v1/', include(departments_router.urls)),

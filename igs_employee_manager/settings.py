@@ -57,7 +57,7 @@ ROOT_URLCONF = 'igs_employee_manager.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['employees/templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
