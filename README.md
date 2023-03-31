@@ -19,7 +19,7 @@ Here you'll see a empty screen just like that: <br>
 ![image](https://user-images.githubusercontent.com/52433168/229001624-7f7050b0-aaf4-4273-bba4-c3d0241834e7.png)
 (Sorry, my skills in frontend are very limited)
 
-Now, to create a employee, you can create first a department in http://localhost:8000/api/v1/departments/ <br>
+Now, you can create first a department in http://localhost:8000/api/v1/departments/ <br>
 
 And then you will see a screen just like that:
 ![image](https://user-images.githubusercontent.com/52433168/229001891-1ba10311-c386-490b-ba13-5b846a0abfec.png)
