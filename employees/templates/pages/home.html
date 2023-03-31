@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employees</title>
+</head>
+<body>
+    <div>
+        <table>
+          <tr>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Department</td>
+          </tr>
+        {% for employee in employees %}
+            <tr>
+                <td>{{employee.name}}</td>
+                <td>{{employee.email}}</td>
+                <td>{{employee.department.name}}</td>
+            </tr>
+        {% endfor %}
+        </table>
+    </div>
+
+</body>
+</html>
